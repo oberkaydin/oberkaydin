@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gif Box</title>
+<title>Defne Abalı</title>
 <style type="text/css">
 
  body {
@@ -64,7 +64,7 @@ button:hover {
 </style>
 </head>
 <body id="body">
-
+<p id="muzik" style="display:none;"></p>
 <div class="container">
     <img id="resim" src="https://i.pinimg.com/originals/fd/2c/1a/fd2c1a96b654e220d09525f006482477.gif" class="gift-image">
   <div class="gift-box">
@@ -136,7 +136,7 @@ function noButtonClick() {
   var button2 = document.getElementById('button2');
   
   question.innerHTML = "<b>Peki...</b>";
-  document.getElementById('resim').innerHTML = "https://uploads.dailydot.com/c26/02/0b070ed92fe8daf4.gif?auto=compress&fm=gif";
+  document.getElementById('muzik').innerHTML = "<iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/YPRtYP8g40Y?autoplay=1&loop=1&playlist=YPRtYP8g40Y" frameborder="0" allowfullscreen allow="autoplay"></iframe>";
   button1.style.display = 'none';
   button2.style.display = 'none';
 }
