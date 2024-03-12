@@ -70,7 +70,7 @@ button:hover {
   <div class="gift-box">
     <p id="question">Merhaba Defne, Kutuyu Açmak ister misin?</p>
     <div class="buttons">
-      <button id="button1" class="yes-btn" onclick="checkClick()">Evet</button>
+      <button id="button1" class="yes-btn" onclick="checkClick()">Aç</button>
       <button id="button2" class="no-btn" onclick="noButtonClick()">Hayır</button>
     </div>
   </div>
@@ -120,6 +120,9 @@ function checkClick() {
   
   if (clickCount === 3) {
     question.innerHTML = "<b>Ah, Defne, içinde derin bir merak ve sonsuz bir bilgelik bulunan bu görkemli kutuyu açmak istediğine emin misin? Çünkü bu eylem, çilekli koltuklardan, uçan pamuk şeker bulutlarına kadar uzanan, karmaşık ve alakasız bir hediyenin sırlarını açığa çıkarabilir. Hazır mısın, yoksa bu Berk'in hazırladığı şeye inanıp 'Evet' tuşuna basarak kaybolmayı ve kaybolurkende kendini çilekli koltuklar arasında sıkışmış ve uçan pamuk şeker bulutlarında savrulmayı mı istiyorsun? (TYT 2021 Sorusudur)</b>";
+    button1.innerHTML="Anlamadım ama açalım";
+  } else if (clickCount === 4) {
+    button1.innerHTML="Aç";
   } else if (clickCount === 5) {
     question.innerHTML = "Kutuyu açmak istediğinize hâlâ emin misiniz ? Çünkü bu eylem, çay bardaklarının melodik ezgilerine karışan, uçan muzlu sincap seslerini duymakla mı ilgilidir, yoksa uçan pamuk şeker bulutlarının kuytulardaki gizemli danslarına katılmak mıdır? Bu kutuyu açmak, bilinmeyen bir labirentin içine dalmanın, kurbağaların bulutlara tırmanmasına izin veren tuhaf bir ritüel mi yoksa ayıların çilekli koltuklarda yaptığı pikniğe davet mi anlamına geliyor?";
   } else if (clickCount === 7) {
